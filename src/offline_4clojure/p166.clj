@@ -6,13 +6,18 @@
 ;;<li><var>x</var> &gt; <var>y</var> &rarr; :gt</li>
 ;;<li><var>x</var> &lt; <var>y</var> &rarr; :lt</li>
 ;;</ul>
-;; tags - 
-;; restricted - 
+;; tags -
+;; restricted -
 (ns offline-4clojure.p166
   (:use clojure.test))
 
 (def __
-;; your solution here
+  (fn my-compare [op a b]
+    (if (op a b)
+      :lt
+      (if (op b a)
+        :gt
+        :eq)))
 )
 
 (defn -main []

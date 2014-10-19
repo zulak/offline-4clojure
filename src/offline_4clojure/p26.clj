@@ -1,13 +1,20 @@
 ;; Fibonacci Sequence - Easy
 ;; Write a function which returns the first X fibonacci numbers.
 ;; tags - Fibonacci:seqs
-;; restricted - 
+;; restricted -
 (ns offline-4clojure.p26
   (:use clojure.test))
 
 (def __
-;; your solution here
-)
+  (fn [max-num]
+    (seq (loop [acc [] fib-num 0]
+           (if (<= max-num fib-num)
+             acc
+             (if (< fib-num 2)
+               (recur (conj acc 1) (inc fib-num))
+               (recur (conj acc (reduce + (take-last 2 acc))) (inc fib-num))))
+           )))
+  )
 
 (defn -main []
   (are [soln] soln

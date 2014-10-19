@@ -1,12 +1,12 @@
 ;; Lists: conj - Elementary
 ;; When operating on a list, the conj function will return a new list with one or more items "added" to the front.
-;; tags - 
-;; restricted - 
+;; tags -
+;; restricted -
 (ns offline-4clojure.p5
   (:use clojure.test))
 
 (def __
-;; your solution here
+  '(1 2 3 4)
 )
 
 (defn -main []

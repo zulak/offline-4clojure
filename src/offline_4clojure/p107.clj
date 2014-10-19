@@ -3,12 +3,12 @@
 ;;
 ;;<p>It can be hard to follow in the abstract, so let's build a simple closure. Given a positive integer <i>n</i>, return a function <code>(f x)</code> which computes <i>x<sup>n</sup></i>. Observe that the effect of this is to preserve the value of <i>n</i> for use outside the scope in which it is defined.</p>
 ;; tags - higher-order-functions:math
-;; restricted - 
+;; restricted -
 (ns offline-4clojure.p107
   (:use clojure.test))
 
 (def __
-;; your solution here
+  (fn [exp] #(reduce * 1 (take exp (repeat %))))
 )
 
 (defn -main []

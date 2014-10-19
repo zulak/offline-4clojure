@@ -1,12 +1,12 @@
 ;; Sets: conj - Elementary
 ;; When operating on a set, the conj function returns a new set with one or more keys "added".
-;; tags - 
-;; restricted - 
+;; tags -
+;; restricted -
 (ns offline-4clojure.p9
   (:use clojure.test))
 
 (def __
-;; your solution here
+  2
 )
 
 (defn -main []

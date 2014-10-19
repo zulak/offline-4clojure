@@ -1,12 +1,12 @@
 ;; Local bindings - Elementary
 ;; Clojure lets you give local names to values using the special let-form.
 ;; tags - syntax
-;; restricted - 
+;; restricted -
 (ns offline-4clojure.p35
   (:use clojure.test))
 
 (def __
-;; your solution here
+  7
 )
 
 (defn -main []

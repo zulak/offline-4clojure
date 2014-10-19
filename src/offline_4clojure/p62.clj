@@ -6,7 +6,8 @@
   (:use clojure.test))
 
 (def __
-;; your solution here
+  (fn doit [f start]
+    (cons start (lazy-seq (doit f (f start)))))
 )
 
 (defn -main []

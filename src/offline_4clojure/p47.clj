@@ -1,12 +1,12 @@
 ;; Contain Yourself - Easy
 ;; The contains? function checks if a KEY is present in a given collection.  This often leads beginner clojurians to use it incorrectly with numerically indexed collections like vectors and lists.
-;; tags - 
-;; restricted - 
+;; tags -
+;; restricted -
 (ns offline-4clojure.p47
   (:use clojure.test))
 
 (def __
-;; your solution here
+  4
 )
 
 (defn -main []

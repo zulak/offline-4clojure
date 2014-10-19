@@ -6,8 +6,13 @@
   (:use clojure.test))
 
 (def __
-;; your solution here
-)
+  (fn
+    [start end]
+    (seq (loop [acc [] count start]
+           (if (<= end count)
+             acc
+             (recur (conj acc count) (inc count))))))
+  )
 
 (defn -main []
   (are [soln] soln

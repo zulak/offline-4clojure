@@ -1,12 +1,12 @@
 ;; Simple Recursion - Elementary
 ;; A recursive function is a function which calls itself.  This is one of the fundamental techniques used in functional programming.
 ;; tags - recursion
-;; restricted - 
+;; restricted -
 (ns offline-4clojure.p57
   (:use clojure.test))
 
 (def __
-;; your solution here
+  '(5 4 3 2 1)
 )
 
 (defn -main []

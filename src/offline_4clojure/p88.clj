@@ -1,12 +1,13 @@
 ;; Symmetric Difference - Easy
 ;; Write a function which returns the symmetric difference of two sets.  The symmetric difference is the set of items belonging to one but not both of the two sets.
 ;; tags - set-theory
-;; restricted - 
+;; restricted -
 (ns offline-4clojure.p88
   (:use clojure.test))
 
 (def __
-;; your solution here
+  (fn sym-diff [a b]
+    (clojure.set/union (clojure.set/difference a b) (clojure.set/difference b a)))
 )
 
 (defn -main []

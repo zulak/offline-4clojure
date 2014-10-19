@@ -1,12 +1,12 @@
 ;; Factorial Fun - Easy
 ;; Write a function which calculates factorials.
 ;; tags - math
-;; restricted - 
+;; restricted -
 (ns offline-4clojure.p42
   (:use clojure.test))
 
 (def __
-;; your solution here
+  #(reduce * 1 (range 1 (inc %)))
 )
 
 (defn -main []

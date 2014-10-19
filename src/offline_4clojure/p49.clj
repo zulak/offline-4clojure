@@ -6,7 +6,8 @@
   (:use clojure.test))
 
 (def __
-;; your solution here
+  (fn [at my-seq]
+    [(take at my-seq) (drop at my-seq)])
 )
 
 (defn -main []

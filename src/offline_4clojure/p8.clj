@@ -1,12 +1,12 @@
 ;; Intro to Sets - Elementary
 ;; Sets are collections of unique values.
-;; tags - 
-;; restricted - 
+;; tags -
+;; restricted -
 (ns offline-4clojure.p8
   (:use clojure.test))
 
 (def __
-;; your solution here
+  #{:a :b :c :d}
 )
 
 (defn -main []

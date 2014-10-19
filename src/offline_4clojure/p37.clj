@@ -1,12 +1,12 @@
 ;; Regular Expressions - Elementary
 ;; Regex patterns are supported with a special reader macro.
 ;; tags - regex:syntax
-;; restricted - 
+;; restricted -
 (ns offline-4clojure.p37
   (:use clojure.test))
 
 (def __
-;; your solution here
+  "ABC"
 )
 
 (defn -main []

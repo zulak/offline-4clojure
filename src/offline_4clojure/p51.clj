@@ -1,12 +1,12 @@
 ;; Advanced Destructuring - Easy
 ;; Here is an example of some more sophisticated destructuring.
 ;; tags - destructuring
-;; restricted - 
+;; restricted -
 (ns offline-4clojure.p51
   (:use clojure.test))
 
 (def __
-;; your solution here
+  [1 2 3 4 5]
 )
 
 (defn -main []

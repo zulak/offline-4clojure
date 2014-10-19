@@ -1,12 +1,12 @@
 ;; Find the odd numbers - Easy
 ;; Write a function which returns only the odd numbers from a sequence.
 ;; tags - seqs
-;; restricted - 
+;; restricted -
 (ns offline-4clojure.p25
   (:use clojure.test))
 
 (def __
-;; your solution here
+  (fn [x] (filter odd? x))
 )
 
 (defn -main []

@@ -6,7 +6,16 @@
   (:use clojure.test))
 
 (def __
-;; your solution here
+  (fn my-intersect [a b]
+    (loop [[head & tail] (seq a)
+           other-set b
+           result #{}]
+      (let [new-result (if (contains? b head)
+                         (conj result head)
+                         result)]
+        (if (empty? tail)
+          new-result
+          (recur tail b new-result)))))
 )
 
 (defn -main []

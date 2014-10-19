@@ -1,12 +1,12 @@
 ;; Intro to Destructuring - Easy
 ;; Let bindings and function parameter lists support destructuring.
 ;; tags - destructuring
-;; restricted - 
+;; restricted -
 (ns offline-4clojure.p52
   (:use clojure.test))
 
 (def __
-;; your solution here
+  [c e]
 )
 
 (defn -main []

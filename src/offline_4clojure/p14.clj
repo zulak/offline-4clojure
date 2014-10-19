@@ -1,12 +1,12 @@
 ;; Intro to Functions - Elementary
 ;; Clojure has many different ways to create functions.
-;; tags - 
-;; restricted - 
+;; tags -
+;; restricted -
 (ns offline-4clojure.p14
   (:use clojure.test))
 
 (def __
-;; your solution here
+  8
 )
 
 (defn -main []

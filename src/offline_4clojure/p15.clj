@@ -1,12 +1,12 @@
 ;; Double Down - Elementary
 ;; Write a function which doubles a number.
-;; tags - 
-;; restricted - 
+;; tags -
+;; restricted -
 (ns offline-4clojure.p15
   (:use clojure.test))
 
 (def __
-;; your solution here
+  #(* 2 %)
 )
 
 (defn -main []

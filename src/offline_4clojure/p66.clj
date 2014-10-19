@@ -1,13 +1,16 @@
 ;; Greatest Common Divisor - Easy
 ;; Given two integers, write a function which
 ;;returns the greatest common divisor.
-;; tags - 
-;; restricted - 
+;; tags -
+;; restricted -
 (ns offline-4clojure.p66
   (:use clojure.test))
 
 (def __
-;; your solution here
+  (fn [a b]
+    (if (= a b)
+      a
+      (recur (min a b) (- (max a b) (min a b)))))
 )
 
 (defn -main []

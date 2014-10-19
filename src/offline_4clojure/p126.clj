@@ -1,12 +1,12 @@
 ;; Through the Looking Class - Easy
 ;; Enter a value which satisfies the following:
 ;; tags - fun:brain-teaser
-;; restricted - 
+;; restricted -
 (ns offline-4clojure.p126
   (:use clojure.test))
 
 (def __
-;; your solution here
+  Class
 )
 
 (defn -main []

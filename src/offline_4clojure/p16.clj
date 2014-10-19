@@ -1,12 +1,12 @@
 ;; Hello World - Elementary
 ;; Write a function which returns a personalized greeting.
-;; tags - 
-;; restricted - 
+;; tags -
+;; restricted -
 (ns offline-4clojure.p16
   (:use clojure.test))
 
 (def __
-;; your solution here
+  (fn [name] (str "Hello, " name "!"))
 )
 
 (defn -main []

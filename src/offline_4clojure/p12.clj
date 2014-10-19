@@ -1,12 +1,12 @@
 ;; Intro to Sequences - Elementary
 ;; All Clojure collections support sequencing.  You can operate on sequences with functions like first, second, and last.
-;; tags - 
-;; restricted - 
+;; tags -
+;; restricted -
 (ns offline-4clojure.p12
   (:use clojure.test))
 
 (def __
-;; your solution here
+  3
 )
 
 (defn -main []

@@ -6,7 +6,8 @@
   (:use clojure.test))
 
 (def __
-;; your solution here
+  (fn [a b]
+    (butlast (mapcat #(list % a) b)))
 )
 
 (defn -main []

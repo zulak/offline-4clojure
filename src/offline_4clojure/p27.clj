@@ -2,12 +2,12 @@
 ;; Write a function which returns true if the given sequence is a palindrome.<br/><br>
 ;;                Hint: "racecar" does not equal '(\r \a \c \e \c \a \r)
 ;; tags - seqs
-;; restricted - 
+;; restricted -
 (ns offline-4clojure.p27
   (:use clojure.test))
 
 (def __
-;; your solution here
+  (fn [x] (= (seq x) (reverse x)))
 )
 
 (defn -main []

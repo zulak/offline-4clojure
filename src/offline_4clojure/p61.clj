@@ -6,7 +6,8 @@
   (:use clojure.test))
 
 (def __
-;; your solution here
+  (fn [k v]
+    (apply hash-map (interleave k v)))
 )
 
 (defn -main []

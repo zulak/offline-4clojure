@@ -1,12 +1,17 @@
 ;; Read a binary number - Easy
 ;; Convert a binary number, provided in the form of a string, to its numerical value.
-;; tags - 
-;; restricted - 
+;; tags -
+;; restricted -
 (ns offline-4clojure.p122
   (:use clojure.test))
 
 (def __
-;; your solution here
+  (fn bin->int [s]
+    (loop [[head & tail] (seq s) acc 0]
+      (if (not head)
+        acc
+        (let [next (* 2 acc)]
+          (recur tail (if (= \1 head) (inc next) next))))))
 )
 
 (defn -main []

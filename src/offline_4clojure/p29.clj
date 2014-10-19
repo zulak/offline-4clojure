@@ -1,12 +1,12 @@
 ;; Get the Caps - Easy
 ;; Write a function which takes a string and returns a new string containing only the capital letters.
 ;; tags - strings
-;; restricted - 
+;; restricted -
 (ns offline-4clojure.p29
   (:use clojure.test))
 
 (def __
-;; your solution here
+  (fn [x] (apply str (filter #(Character/isUpperCase %) x)))
 )
 
 (defn -main []

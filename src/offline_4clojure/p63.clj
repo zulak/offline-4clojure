@@ -6,7 +6,17 @@
   (:use clojure.test))
 
 (def __
-;; your solution here
+  (fn my-group-by [f s]
+  (loop [[head & tail] (map #(vector (f %) %) s)
+         result {}]
+    (if (not head)
+      result
+      (let [v (first head)
+            k (last head)
+            keys (if (contains? result v)
+                   (get result v)
+                   [])]
+        (recur tail (assoc result v (conj keys k)))))))
 )
 
 (defn -main []

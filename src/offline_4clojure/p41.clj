@@ -1,12 +1,18 @@
 ;; Drop Every Nth Item - Easy
 ;; Write a function which drops every Nth item from a sequence.
 ;; tags - seqs
-;; restricted - 
+;; restricted -
 (ns offline-4clojure.p41
   (:use clojure.test))
 
 (def __
-;; your solution here
+  (fn [the-seq n]
+    (loop [in the-seq out [] count 1]
+      (if (empty? in)
+        out
+        (if (= 0(mod count n))
+          (recur (rest in) out (inc count))
+          (recur (rest in) (conj out (first in)) (inc count))))))
 )
 
 (defn -main []

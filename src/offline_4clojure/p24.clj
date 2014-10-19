@@ -1,12 +1,12 @@
 ;; Sum It All Up - Easy
 ;; Write a function which returns the sum of a sequence of numbers.
 ;; tags - seqs
-;; restricted - 
+;; restricted -
 (ns offline-4clojure.p24
   (:use clojure.test))
 
 (def __
-;; your solution here
+  (fn [x] (reduce + 0 x))
 )
 
 (defn -main []

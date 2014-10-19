@@ -3,12 +3,19 @@
 ;;
 ;;Write a function that accepts a variable length mathematical expression consisting of numbers and the operations +, -, *, and /. Assume a simple calculator that does not do precedence and instead just calculates left to right.
 ;; tags - higher-order-functions:math
-;; restricted - 
+;; restricted -
 (ns offline-4clojure.p135
   (:use clojure.test))
 
 (def __
-;; your solution here
+  (fn infix [& args]
+  (when (< (count args) 3)
+    (throw ( RuntimeException.)))
+  (if (= 3 (count args))
+    (let [[a op b] args]
+      (op a b))
+    (let [[a op b & rest] args]
+      (apply infix (conj rest (op a b))))))
 )
 
 (defn -main []
