@@ -5,12 +5,25 @@
 ;;
 ;;<p>Write a function which converts (for example) the string "SJ" into a map of <code>{:suit :spade, :rank 9}</code>. A ten will always be represented with the single character "T", rather than the two characters "10".</p>
 ;; tags - strings:game
-;; restricted - 
+;; restricted -
 (ns offline-4clojure.p128
   (:use clojure.test))
 
 (def __
-;; your solution here
+  (fn [[s r]]
+    (let [suits {\D :diamond
+                 \H :heart
+                 \C :club
+                 \S :spade}
+          ranks {\T 8
+                 \J 9
+                 \Q 10
+                 \K 11
+                 \A 12}
+          suit (get suits s)]
+      (if (Character/isDigit r)
+        {:suit suit :rank (- (Integer/valueOf (str r)) 2)}
+        {:suit suit :rank (get ranks r)})))
 )
 
 (defn -main []
